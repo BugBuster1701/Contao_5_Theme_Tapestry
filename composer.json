@@ -3,7 +3,7 @@
     "type": "contao-theme",
     "description": "This is an example website for the Contao 5 Theme Tapestry",
     "version": "5.7",
-    "license": "CC-BY-SA-4.0",
+    "license": "CC-BY-4.0",
 	"authors":[
 		{
 			"name":"Glen Langer",
