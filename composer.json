@@ -1,0 +1,47 @@
+{
+    "name": "bugbuster/theme_demo_tapestry",
+    "type": "contao-theme",
+    "description": "This is an example website for the Contao 5 Theme Tapestry",
+    "version": "5.7",
+    "license": "CC-BY-SA-4.0",
+	"authors":[
+		{
+			"name":"Glen Langer",
+			"homepage":"http://contao.ninja",
+			"role":"Developer"
+		}
+	],
+	"funding": [
+		{
+			"type": "other",
+			"url": "https://www.amazon.de/wishlist/26HHEJOU03G76"
+		}
+	],
+    "support": {
+        "issues": "https://github.com/BugBuster1701/Contao_5_Theme_Demo_Tapestry/issues",
+        "forum": "https://community.contao.org",
+        "source": "https://github.com/BugBuster1701/Contao_5_Theme_Demo_Tapestry",
+        "docs": "https://contao.ninja/contao-theme-tapestry.html"
+    },
+    "require": {
+        "contao/calendar-bundle": "5.7.*",
+        "contao/comments-bundle": "5.7.*",
+        "contao/conflicts": "@dev",
+        "contao/faq-bundle": "5.7.*",
+        "contao/listing-bundle": "5.7.*",
+        "contao/manager-bundle": "5.7.*",
+        "contao/news-bundle": "5.7.*",
+        "contao/newsletter-bundle": "5.7.*"
+    },
+    "extra": {
+        "contao-component-dir": "assets"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@php vendor/bin/contao-setup"
+        ],
+        "post-update-cmd": [
+            "@php vendor/bin/contao-setup"
+        ]
+    }
+}
