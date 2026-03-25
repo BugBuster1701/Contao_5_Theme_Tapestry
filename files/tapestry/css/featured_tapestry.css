@@ -1,0 +1,52 @@
+#featured.row {
+    padding-top:1em;
+    padding-bottom:1em;
+    background-image:url("/files/tapestry/img02.jpg");
+    background-position:left top;
+    background-repeat:repeat-x;
+}
+#featured.row:after {
+    height:0;
+    clear:both;
+    display:block;
+    line-height:0;
+    content: ".";
+    visibility: hidden;
+}
+#featured .b32 {
+    width:32%;
+    float:left;
+}
+#featured .ml2 {
+    margin-left:2%;
+}
+#featured .box-style {
+    overflow:hidden;
+    padding:2em 0;
+}
+#featured .box-style img {
+    float:left;
+    margin-right:1.56em;
+}
+#featured .box-style a img {
+    width:40%;
+    display:block;
+}
+#featured .box-style h3 {
+    padding-bottom:1em;
+    font-size:1.5em;
+}
+#featured .button-style2 a {
+    height:2.6em;
+    display:inline-block;
+    margin-top:1.25em;
+    padding:0 1.25em;
+    border-radius:5px;
+    font-size:.9em;
+    line-height:2.6em;
+    color:#FFF;
+    background: none repeat scroll 0 0 #766946;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+}

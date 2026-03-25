@@ -1,0 +1,90 @@
+{% extends "@Contao/page/layout.html.twig" %}
+
+{%- set body_attributes = attrs()
+    .addClass('layout--3mr-m')
+    .mergeWith(body_attributes|default)
+-%}
+
+{% block end_of_head %}
+    {{ parent() }}
+    <style{{ attrs().setIfExists('nonce', csp_nonce('style-src')) }}>
+        #wrapper {
+            width: 1140px;
+            margin: 0 auto
+        }
+
+        #right {
+            width: 200px
+        }
+
+        #container {
+            padding-right: 200px
+        }
+    </style>
+    <link rel="stylesheet" href="{{ asset('tapestry/css/layout.css', 'contao_vfs.files') }}">
+    <link rel="stylesheet" href="{{ asset('tapestry/css/responsive.css', 'contao_vfs.files') }}">
+    <link rel="stylesheet" href="{{ asset('tapestry/css/basic_tapestry.css', 'contao_vfs.files') }}">
+    <link rel="stylesheet" href="{{ asset('tapestry/css/default_tapestry.css', 'contao_vfs.files') }}">
+    <link rel="stylesheet" href="{{ asset('tapestry/css/footer_tapestry.css', 'contao_vfs.files') }}">
+    <link rel="stylesheet" href="{{ asset('tapestry/css/marketing_tapestry.css', 'contao_vfs.files') }}">
+    <link rel="stylesheet" href="{{ asset('tapestry/css/featured_tapestry.css', 'contao_vfs.files') }}">
+    <link rel="stylesheet" href="{{ asset('tapestry/css/print_tapestry.css', 'contao_vfs.files') }}">
+    <link rel="stylesheet" href="{{ asset('tapestry/fonts/oswald-latin-regular.css', 'contao_vfs.files') }}">
+    <link rel="stylesheet" href="{{ asset('tapestry/fonts/abel-latin-regular.css', 'contao_vfs.files') }}">
+    <link rel="stylesheet" href="{{ asset('tapestry/fonts/satisfy-latin-regular.css', 'contao_vfs.files') }}">
+    <script src="{{ asset('js/jquery.js', 'contao-components/jquery') }}"></script>
+{% endblock %}
+
+{% block body %}
+    {{ parent() }}
+    {{ include('@Contao/j_accordion.html.twig') }}
+    {{ include('@Contao/j_colorbox.html.twig') }}
+    {{ include('@Contao/js_slider.html.twig') }}
+    {# {{ include('@Contao/j_tablesort.html.twig') }} #}
+    {# {{ include('@Contao/js_autofocus') }} #}
+{% endblock %}
+
+{% block body_content %}
+<div id="wrapper">
+    {% slot header %}
+    <header id="header">
+        <div class="inside">
+            {{ slot() }}
+        </div>
+    </header>
+    {% endslot %}
+
+    {% slot marketing_tapestry %}
+        <div id="marketing-tapestry">
+            <div class="inside">
+                {{ slot() }}
+            </div>
+        </div>
+    {% endslot %}
+
+    <div id="container">
+    {% slot main %}
+        <main id="main">
+            <div class="inside">
+                {{ slot() }}
+            </div>
+        </main>
+    {% endslot %}
+    {% slot right %}
+        <aside id="right">
+            <div class="inside">
+                {{ slot() }}
+            </div>
+        </aside>
+    {% endslot %}
+    </div>
+
+    {% slot footer %}
+    <footer id="footer">
+        <div class="inside">
+            {{ slot() }}
+        </div>
+    </footer>
+    {% endslot %}
+</div>
+{% endblock %}

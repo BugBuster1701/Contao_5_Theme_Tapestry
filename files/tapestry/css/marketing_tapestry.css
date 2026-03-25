@@ -1,0 +1,38 @@
+#marketing-tapestry .row {
+    padding-top:1em;
+    padding-bottom:1em;
+    background-image:url("/files/tapestry/img02.jpg");
+    background-position:left bottom;
+    background-repeat:repeat-x;
+}
+#marketing-tapestry .row:after {
+    height:0;
+    clear:both;
+    display:block;
+    line-height:0;
+    content: ".";
+    visibility: hidden;
+}
+#marketing-tapestry .b23 {
+    width:23.5%;
+    float:left;
+}
+#marketing-tapestry .ml2 {
+    margin-left:2%;
+}
+#marketing-tapestry .subtitle {
+    padding-bottom:2em;
+    font-family:Georgia,"Times New Roman",Times,serif;
+    font-style:italic;
+}
+#marketing-tapestry .button-style1 a {
+    display:block;
+    padding:1em 0 1em 1em;
+    background:#000 url("/files/tapestry/img03.jpg") right center no-repeat;
+    font:1em 'Oswald',sans-serif;
+    color:#FFF;
+    font-weight: 200;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+}

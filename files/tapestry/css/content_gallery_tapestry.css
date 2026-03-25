@@ -1,0 +1,58 @@
+.content-gallery ul {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (min-width: 40rem) {
+  .content-gallery ul {
+    grid-gap: 2rem;
+  }
+}
+.content-gallery li {
+  grid-column: span 12;
+}
+@media only screen and (min-width: 30rem) {
+  .content-gallery li {
+    grid-column: span 6;
+  }
+}
+.content-gallery figure {
+  transition: border-color 0.2s ease-in-out;
+  padding: 0.25rem;
+  border: 1px solid hsl(207, 12%, 88%);
+}
+.content-gallery figure:hover, .content-gallery figure:focus {
+  border-color: hsl(30, 100%, 48%);
+}
+@media only screen and (min-width: 64rem) {
+  .content-gallery--cols-3 li {
+    grid-column: span 4;
+  }
+}
+.content-gallery--cols-4 li {
+  grid-column: span 3;
+}
+.content-gallery--cols-6 li {
+  grid-column: span 2;
+}
+
+.content-youtube figure,
+.content-vimeo figure {
+  margin: 0;
+}
+.content-youtube figure.aspect,
+.content-vimeo figure.aspect {
+  position: relative;
+  width: 100%;
+}
+.content-youtube figure.aspect iframe,
+.content-vimeo figure.aspect iframe {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  width: 100% !important;
+  height: 100% !important;
+}

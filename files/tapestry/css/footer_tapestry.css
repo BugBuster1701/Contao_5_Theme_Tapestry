@@ -1,0 +1,11 @@
+#copyright {
+    padding:1.875em 0;
+    background-image:url("/files/tapestry/img02.jpg");
+    background-position:left top;
+    background-repeat:repeat-x;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+#copyright p {
+    font-size:1em;
+    color:#675830;
+}

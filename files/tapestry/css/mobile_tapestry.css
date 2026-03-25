@@ -1,0 +1,39 @@
+#logo h1 {
+    float:none;
+    padding:0;
+}
+#logo p {
+    padding:0;
+}
+#wrapper {
+    margin-bottom:5px;
+}
+#top_image {
+    margin-left:0;
+}
+#header .mod_navigation {
+    padding-top:0;
+}
+#header .mod_navigation a,
+#header .mod_navigation span {
+    float:left;
+    display:block;
+    margin-right:.12em;
+    padding:.75em .5em;
+    font:1.25em 'Abel',sans-serif;
+    color:#2C2C2C;
+}
+.mod_article,
+.mod_eventlist,
+.mod_newsarchive,
+.mod_newsreader {
+    margin-left:5px;
+}
+textarea {
+    margin-top:2px;
+    margin-left:2px;
+    width:96% !important;
+}
+fieldset {
+    width:90% !important;
+}
