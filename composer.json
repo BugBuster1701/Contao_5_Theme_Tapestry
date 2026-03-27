@@ -2,7 +2,6 @@
     "name": "bugbuster/theme_demo_tapestry",
     "type": "contao-theme",
     "description": "This is an example website for the Contao 5 Theme Tapestry",
-    "version": "5.7",
     "license": "CC-BY-4.0",
 	"authors":[
 		{
